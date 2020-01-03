@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	/**
 	 * preloader
 	 */	
-	$('#preloader').delay(1000).fadeOut(600);
+	$('#preloader').delay(600).fadeOut(600);
 
 	/**
 	 * animated title at the top of the page 
