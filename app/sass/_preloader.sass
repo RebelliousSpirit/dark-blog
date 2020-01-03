@@ -1,0 +1,36 @@
+.preloader
+    background-color:  rgba(56,55,64,0.95)
+    position: fixed
+    width: 100%
+    height: 100%
+    z-index: 1000
+
+.preloader__wrap
+    position: relative
+    width: 100%
+    height: 100%
+
+.preloader__spinner
+    text-align: center
+    opacity: 0.8
+    position: absolute
+    top: 50%
+    left: 50%
+    width: 76px
+    height: 76px
+    margin:
+        top: -38px
+        left: -38px
+    .preloader__spinner-icon
+        display: block
+        font-size: 70px
+        color: $color-text-light
+        animation: preloader 1.5s ease infinite
+        transform-origin: center
+
+@keyframes preloader
+    100%
+        transform: rotate(360deg)
+        
+
+

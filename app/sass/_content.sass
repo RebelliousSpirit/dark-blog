@@ -1,0 +1,99 @@
+/* content styles */
+.content
+	padding:
+		top: 90px
+		bottom: 170px
+		
+.content-inner
+	text-align: left
+	padding:
+		bottom: 48px
+	h2
+		font-size: 43px
+		line-height: 70px
+		text-transform: uppercase
+		color: $color-page-header
+	p
+		margin-top: 35px
+		width: 60%
+		color: $color-text-medium
+
+/* contact page styles */
+.contact__form
+	label
+		display: block
+		margin: 
+			top: 25px
+			bottom: 5px
+	input, textarea
+		width: 100%
+	textarea
+		overflow-y: hidden
+
+.contact__form-submit
+	border: none
+	padding: 10px
+		right: 35px
+	background-color: $input-bg	
+	&:hover
+		background-color: #706F80
+
+/* single page styles */
+.post__content
+	.float-left
+		width: 35%
+		margin-right: 15px
+	figure
+		border: none
+
+.post__thumb
+	padding: 5px
+
+.post
+	.post__form
+		padding: 
+			top: 45px
+			bottom: 25px
+		label
+			display: block
+		textarea
+			height: 45px
+			background-color: $bg-body
+			width: 100%
+			border: 
+				bottom: 1px solid $border-color-input
+
+.post__form-submit
+	font-weight: 700
+	text-transform: uppercase
+	background: none
+	border: none
+	border-bottom: 1px solid $border-color-input
+	margin-top: 37px
+	padding: 14px 24px
+	transition: 0.3s
+	&:hover
+		background-color: #E0DEFF
+		border-color: transparent
+
+.post__comments
+	background-color: #E0DEFF
+	padding: 35px 25px
+
+.comment
+	background-color: #fff	
+	padding: 15px
+	margin-bottom: 15px
+	.comment__text
+		padding: 15px 5px
+	&::after
+		content: ""
+		display: block
+		clear: both
+
+.comment__avatar
+	width: 35%
+	float: left
+	margin-right: 15px
+
+/* about page styles*/

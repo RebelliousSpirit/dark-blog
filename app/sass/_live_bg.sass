@@ -1,0 +1,32 @@
+/* block styles with live background */
+.live-bg
+    transform-style: inherit
+    perspective: 1px
+    width: 30%
+    height: 75vh
+    background-color: #706F80
+    overflow: hidden
+    position: absolute
+    top: 0
+    right: 0
+    opacity: 0.8
+    z-index: -1
+
+.live-bg__wrap
+    position: relative
+
+.live-bg__item
+    width: 50%
+    display: block
+    transform-origin: center   
+    opacity: 0.8
+    position: absolute
+    &:nth-child(1)                
+        top: 10vh
+        left: 1vw
+    &:nth-child(2)
+        top: 31vh
+        left: 5vw
+    &:nth-child(3)
+        top: 5vh
+        left: 11vw    
