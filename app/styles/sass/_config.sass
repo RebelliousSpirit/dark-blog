@@ -1,0 +1,157 @@
+// User variables:
+//fonts
+$font-family: 'Raleway', sans-serif
+
+// bacground
+$bg-body: #ffffff
+$footer-bg: #706F80
+$input-bg: #E0DEFF
+$input-bg-focus: #fff
+
+// colors
+$color-page-header: #000
+$color-text: #383740
+$color-text-hover: #706F80
+$color-text-medium: #A8A6BF
+$color-text-light: #E0DEFF
+$color-links: #383740
+$color-links-hover: #706F80
+
+//borders color
+$border-color-input: #706F80
+
+// // Breakpoints mixin settings (node_modules/bootstrap/scss/mixins/_breakpoints.scss)
+// // Example: +media-breakpoint-down(xs) - ≥576px / +media-breakpoint-up(sm) - // ≤576px
+// // Default variables: node_modules/bootstrap/scss/_variables.scss
+// $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px)
+
+/* Color Theme Swatches in RGBA */
+$My-Color-Theme-1-rgba: rgba(168,166,191, 1)
+$My-Color-Theme-2-rgba: rgba(112,111,128, 1)
+$My-Color-Theme-3-rgba: rgba(224,222,255, 1)
+$My-Color-Theme-4-rgba: rgba(56,55,64, 1)
+$My-Color-Theme-5-rgba: rgba(212,210,242, 1)
+/* Color Theme Swatches in Hex */
+$My-Color-Theme-1-hex: #A8A6BF
+$My-Color-Theme-2-hex: #706F80
+$My-Color-Theme-3-hex: #E0DEFF
+$My-Color-Theme-4-hex: #383740
+$My-Color-Theme-5-hex: #D4D2F2
+
+@import "node_modules/bootstrap/scss/bootstrap-reboot.scss" // Bootstrap Reboot collection
+@import "node_modules/bootstrap/scss/mixins/_breakpoints.scss" // Bootstrap Breakpoints mixin
+@import "node_modules/bootstrap/scss/bootstrap-grid.scss" // Optional Bootstrap Grid
+// @import "bootstrap/scss/utilities/_sizing.scss" // Optional Bootstrap Utilites
+
+// @import "normalize.css/normalize.css" // CSS library plug-in example (npm i --save-dev normalize.css)
+
+
+// font-weight helper:
+// 100 Extra Light or Ultra Light;
+// 200 Light or Thin; 300 Book or Demi;
+// 400 Regular or Normal;
+// 500 Medium;
+// 600 Semibold or Demibold;
+// 700 Bold;
+// 800 Black or Extra Bold or Heavy;
+// 900 Extra Black or Fat or Ultra Black
+
+@mixin font($f-name, $f-style, $f-weight, $f-url)
+	@font-face
+		font-family: $f-name
+		font-style: $f-style
+		font-weight: $f-weight
+		src: url($f-url) format('woff2')
+
+@include font('Roboto', normal, 400, '../fonts/Raleway-Bold.woff')
+@include font('Roboto', italic, 400, '../fonts/Raleway-ExtraBold.woff')
+@include font('Roboto', normal, 700, '../fonts/Raleway-Medium.woff')
+@include font('Roboto', italic, 700, '../fonts/Raleway-Regular.woff')
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 30px
+$gutter: $grid-gutter-width
+
+::placeholder
+	color: $color-text
+
+::selection
+	color: #fff
+
+input, textarea
+	background-color: $input-bg
+	outline: none
+	border: none
+	padding: 10px
+		right: 35px
+	&:focus
+		background-color: $input-bg-focus
+		border: 1px solid $border-color-input
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+ul
+	padding: 0
+	margin: 0
+	li
+		list-style: none
+body
+	font-size: 14px
+	min-width: 320px
+	line-height: 22px
+	font-family: $font-family
+	overflow-x: hidden
+	color: $color-text
+	background-color: $bg-body
+
+button
+	&:focus
+		outline: none
+
+a, button
+	transition: 0.3s ease
+
+figure
+	padding: 3px
+	border: 1px solid #A8A6BF
+	border-radius: 3px
+// Custom Sass / Remove before use
+
+.container
+	max-width: 1140px
+	padding:
+		right: $gutter/2
+		left: $gutter/2
+	margin:
+		left: auto
+		right: auto
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.example-grid
+	display: grid
+	grid-gap: $gutter
+	grid-template-columns: 1fr 1fr
+	grid-template-areas: "left right"
+	> div:first-child
+		grid-area: left
+	> div:last-child
+		grid-area: right
+	+media-breakpoint-down(xs)
+		display: block
+		> div
+			padding: $gutter/2 0
+	
+.example-img
+	width: 100%
+
+.page-holder
+	position: relative
+
+.float-left
+	float: left

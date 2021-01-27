@@ -1,6 +1,61 @@
-<!--#set var="title" value="projects page" -->
-<!--#include virtual="/parts/header.html" -->
-<!--#include virtual="/parts/dropdownmenu.html" -->	
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Войти в IT(index)</title>
+	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="icon" href="img/favicon.png">
+	<meta property="og:image" content="img/@1x/preview.jpg">
+	
+	<link rel="stylesheet" href="css/styles.min.css">
+	<link rel="stylesheet" href="css/style-font-moon.min.css">
+
+</head>
+
+<body>
+	<div class="page-holder" id="page-holder">
+
+		<div class="preloader" id="preloader">
+			<div class="preloader__wrap">
+				<div class="preloader__spinner">
+					<i class="preloader__spinner-icon icon-spinner9"></i>
+				</div>
+			</div>
+		</div>
+		
+		<header class="header" id="header">
+			<div class="container">
+				<div class="row justify-content-start header__wrap">
+					<div class="header__logo col-md-4">
+						<a href="#"><img src="img/@1x/logo.png" alt="logo"></a>
+					</div>
+					<button class="menu-swith">
+						<i class="icon-menu"></i>
+					</button>
+				</div>
+				<!-- /.row -->				
+			</div>							
+		</header>
+		<!-- /.header#header -->
+
+		<div class="opacity-menu" id="opacity-menu">
+			<button class="menu-swith"><i class="icon-cross"></i></button>
+			<div class="opacity-menu__nav-list">
+				<ul>
+					<li><a href="#">Домой</a></li>
+					<li><a href="#">Блог</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>				
+			</div>
+		</div>
+		<!-- /.opacity-menu -->	
 
 		<div class="container">
 			<div class="row justify-content-start">
@@ -69,4 +124,24 @@
 		</div>
 		<!-- /.container -->
 
-<!--#include virtual="/parts/footer.html" -->
+
+		<footer class="footer" id="footer">
+			<div class="container">
+				<ul class="footer__social">
+					<li><a href="#"><i class="icon-vk"></i></a></li>
+					<li><a href="#"><i class="icon-facebook2"></i></a></li>
+					<li><a href="#"><i class="icon-google2"></i></a></li>
+				</ul>
+				<div class="footer__copiryght">
+					&copy;<span class="footer__year"></span>vojtiVit.com Все права защищены 
+				</div>
+			</div>
+			<!-- /.container -->					
+		</footer>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/magicText.js"></script>
+	<!-- <script src="js/lazyload.min.js"></script> -->
+	<script src="js/app.min.js"></script>
+</body>
+</html>
