@@ -20,6 +20,8 @@ const newer        = require('gulp-newer')
 const rsync        = require('gulp-rsync')
 const del          = require('del')
 
+const concat       = require('gulp-concat')
+
 function browsersync() {
 	browserSync.init({
 		server: {
@@ -31,6 +33,11 @@ function browsersync() {
 		online: true,
 		// tunnel: 'yousutename', // Attempt to use the URL https://yousutename.loca.lt
 	})
+}
+
+function getScripts() {
+	return src(['node_modules/lazyload/lazyload.min.js', 'node_modules/jquery/dist/jquery.min.js'])
+	.pipe(dest('app/js'))
 }
 
 function scripts() {
@@ -119,6 +126,7 @@ function startwatch() {
 	watch(`app/**/*.{${fileswatch}}`, { usePolling: true }).on('change', browserSync.reload)
 }
 
+exports.getScripts = getScripts
 exports.scripts = scripts
 exports.styles  = styles
 exports.images  = images

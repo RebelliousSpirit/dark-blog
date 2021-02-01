@@ -6,7 +6,7 @@
 
 	<meta charset="utf-8">
 
-	<title>Войти в IT(index)</title>
+	<title>Dark blog</title>
 	<meta name="description" content="Startup HTML template OptimizedHTML 5">
 
 	<meta name="viewport" content="width=device-width">
@@ -33,8 +33,8 @@
 		<header class="header" id="header">
 			<div class="container">
 				<div class="row justify-content-start header__wrap">
-					<div class="header__logo col-md-4">
-						<a href="#"><img src="img/@1x/logo.png" alt="logo"></a>
+					<div class="header__logo col-4 col-md-2">
+						<a href="#"><img src="img/dist/logo.png" class="example-img" alt="logo"></a>
 					</div>
 					<button class="menu-swith">
 						<i class="icon-menu"></i>
@@ -44,25 +44,25 @@
 			</div>							
 		</header>
 		<!-- /.header#header -->
-
-		<div class="opacity-menu" id="opacity-menu">
-			<button class="menu-swith"> <i class="icon-cross"></i>
-			</button>
-			<div class="opacity-menu__nav-list">
-				<ul>
-					<li>
-						<a href="#">Домой</a>
-					</li>
-					<li>
-						<a href="#">Блог</a>
-					</li>
-					<li>
-						<a href="#">Контакты</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<!-- /.opacity-menu -->
+<div class="opacity-menu" id="opacity-menu">
+	<button class="menu-swith"> <i class="icon-cross"></i>
+	</button>
+	<div class="opacity-menu__nav-list">
+		<ul>
+			<li>
+				<a href="/">Домой</a>
+			</li>
+			<li>
+				<a href="/projects.html">Блог</a>
+			</li>
+			<li>
+				<a href="/contact.html">Контакты</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- /.opacity-menu -->
+		
 
 		<div class="container">	
 			<div id="content" class="row content">
@@ -86,7 +86,7 @@
 								<label for="email">Введите Ваш email</label>
 								<input type="text" id="email" name="email"></div>
 							<div class="col-md-12">
-								<label for="message">Введиет Ваше сообщение</label>
+								<label for="message">Введите Ваше сообщение</label>
 								<textarea name="message" rows="15" cols="12" id="message"></textarea></div>
 							<div class="col-md-2">
 								<button type="submit" class="contact__form-submit">отправить</button>
@@ -117,7 +117,13 @@
 	</div>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/magicText.js"></script>
-	<!-- <script src="js/lazyload.min.js"></script> -->
 	<script src="js/app.min.js"></script>
+	<script src="js/lazyload.min.js"></script>
+	<script>
+		var lazyLoadInstance = new LazyLoad({
+		  
+		});
+	</script>
+	
 </body>
 </html>

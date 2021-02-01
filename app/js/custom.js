@@ -1,31 +1,31 @@
+/**
+ * preloader
+ */	
+window.onload = function () {
+	let preloader = document.querySelector('#preloader')
+	window.setTimeout(() => {
+		preloader.style.display = 'none'
+	},
+		1000)
+}
+
 document.addEventListener("DOMContentLoaded", function() {
+	
 	/**
 	 * disappearing menu
 	 * 
-	 */
-	
+	 */	
 	$('#header .menu-swith').on('click', function(event) {
 		$('#opacity-menu').fadeIn(600).show(600);
 	});
 
-	$('#opacity-menu .menu-swith').on('click', function(event) {
-		
-		$('#opacity-menu').fadeOut(600).hide(600);
-	
+	$('#opacity-menu .menu-swith').on('click', function(event) {	
+		$('#opacity-menu').fadeOut(600).hide(600);	
 	});
-	
-	/**
-	 * setting up lazy loading of images
-	 * 
-	 */
-	
-	// $('img.lazy').lazyLoad();
 
 	/*
 	* parallax effect in live bg
-	*
 	*/
-
 	function moveLiveImg(event) {
 		
 		let bgItems = document.querySelectorAll('#live-bg .live-bg__item');
@@ -45,15 +45,5 @@ document.addEventListener("DOMContentLoaded", function() {
 	}
 
 	document.addEventListener('mousemove', moveLiveImg);
-
-	/**
-	 * preloader
-	 */	
-	$('#preloader').delay(600).fadeOut(600);
-
-	/**
-	 * animated title at the top of the page 
-	 */
-
 	
 });
