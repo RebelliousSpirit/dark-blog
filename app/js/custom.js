@@ -45,5 +45,14 @@ document.addEventListener("DOMContentLoaded", function() {
 	}
 
 	document.addEventListener('mousemove', moveLiveImg);
+
+	/**
+	 * modal window
+	 */
+	$('.btn-close').on('click', function(){
+		if ($(this).data('close') && $(this).parents('.modal-window').data('modal')) {
+			$(this).parents('.modal-window').fadeOut(600)
+		}
+	})
 	
 });

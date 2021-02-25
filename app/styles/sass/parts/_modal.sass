@@ -1,0 +1,32 @@
+.modal-window
+	position: fixed
+	top: 15%
+	width: 100%
+	
+.modal-window__content
+	max-width: 250px
+	padding: 25px
+	padding-top: 45px
+	margin: 0 auto
+	color: #fff
+	opacity: 0.9
+	font-size: 16px
+	position: relative
+	.btn-close
+		position: absolute
+		top: 5px
+		right: 5px
+		background-color: transparent 
+
+.error
+	.modal-window__content
+		background-color: $bg-error
+
+.success
+	.modal-window__content
+		background-color: $bg-success
+
+.warning
+	.modal-window__content
+		background-color: $bg-warning
+

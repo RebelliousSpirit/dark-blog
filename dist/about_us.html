@@ -7,7 +7,6 @@
 	<meta charset="utf-8">
 
 	<title>Dark blog</title>
-	<meta name="description" content="Startup HTML template OptimizedHTML 5">
 
 	<meta name="viewport" content="width=device-width">
 
@@ -15,7 +14,7 @@
 	<meta property="og:image" content="img/@1x/preview.jpg">
 	
 	<link rel="stylesheet" href="css/styles.min.css">
-	<link rel="stylesheet" href="css/style-font-moon.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 
 </head>
 
@@ -25,7 +24,9 @@
 		<div class="preloader" id="preloader">
 			<div class="preloader__wrap">
 				<div class="preloader__spinner">
-					<i class="preloader__spinner-icon icon-spinner9"></i>
+					<span class="preloader__spinner-icon">
+						<i class="fa fa-spinner" aria-hidden="true"></i>
+					</span>					
 				</div>
 			</div>
 		</div>
@@ -37,7 +38,7 @@
 						<a href="#"><img src="img/dist/logo.png" class="example-img" alt="logo"></a>
 					</div>
 					<button class="menu-swith">
-						<i class="icon-menu"></i>
+						<i class="fa fa-bars" aria-hidden="true"></i>
 					</button>
 				</div>
 				<!-- /.row -->				
@@ -45,7 +46,8 @@
 		</header>
 		<!-- /.header#header -->
 <div class="opacity-menu" id="opacity-menu">
-	<button class="menu-swith"> <i class="icon-cross"></i>
+	<button class="menu-swith">
+		<i class="fa fa-times" aria-hidden="true"></i>
 	</button>
 	<div class="opacity-menu__nav-list">
 		<ul>
@@ -93,16 +95,23 @@
 		</div>
 		<!-- /.container -->
 
-
+		<div class="modal-window success" data-modal="true">
+	<div class="modal-window__content">
+		<button class="btn btn-close" data-close="true">
+			<i class="fa fa-times" aria-hidden="true"></i>		
+		</button>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab in aut vitae tempore similique cupiditate, atque ad reiciendis asperiores maiores dolores necessitatibus accusamus dicta quae.</p>
+	</div>
+</div>
 		<footer class="footer" id="footer">
 			<div class="container">
 				<ul class="footer__social">
-					<li><a href="#"><i class="icon-vk"></i></a></li>
-					<li><a href="#"><i class="icon-facebook2"></i></a></li>
-					<li><a href="#"><i class="icon-google2"></i></a></li>
+					<li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
 				</ul>
 				<div class="footer__copiryght">
-					&copy;<span class="footer__year"></span>vojtiVit.com Все права защищены 
+					<i class="fa fa-copyright" aria-hidden="true"></i><span class="footer__year"></span>vojtiVit.com Все права защищены 
 				</div>
 			</div>
 			<!-- /.container -->					
