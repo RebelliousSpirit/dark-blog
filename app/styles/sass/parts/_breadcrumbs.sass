@@ -1,0 +1,43 @@
+.breadcrumbs-wrap
+	text-align: center
+
+.breadcrumbs
+	font-size: 18px
+	line-height: 18px
+	display: inline-block
+	margin: 0 auto
+	position: relative
+	&:before
+		content: ''
+		width: 100%
+		height: 100%
+		display: block
+		background-color: #706F80
+		transform: skewX(20deg)
+		position: absolute
+		top: 0
+		left: 0
+		z-index: -1
+
+.breadcrumbs__items-wrap
+	display: flex
+	justify-content: center
+	padding: 5px 15px
+	.active
+		a, .breadcrumbs__item-icon
+			color: #fff
+
+.braadcrumbs__item
+	margin-left: 5px
+	color: $color-links
+	a, .breadcrumbs__item-icon
+		transition: 0.3s ease
+		color: $color-links
+	&:first-child
+		margin-left: 0
+	&:hover
+		a, .breadcrumbs__item-icon 
+			color:#fff
+
+.breadcrumbs__item-icon
+	font-size: 16px

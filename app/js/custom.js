@@ -9,42 +9,42 @@ window.onload = function () {
 		1000)
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-	
+document.addEventListener("DOMContentLoaded", function() {	
+
 	/**
 	 * disappearing menu
 	 * 
 	 */	
-	$('#header .menu-swith').on('click', function(event) {
-		$('#opacity-menu').fadeIn(600).show(600);
-	});
+	$('#header .menu-switch').on('click', function(event) {
+		$('#opacity-menu').fadeIn(600).show(600)
+	})
 
-	$('#opacity-menu .menu-swith').on('click', function(event) {	
-		$('#opacity-menu').fadeOut(600).hide(600);	
-	});
+	$('#opacity-menu .menu-switch').on('click', function(event) {	
+		$('#opacity-menu').fadeOut(600).hide(600)	
+	})
 
 	/*
 	* parallax effect in live bg
 	*/
 	function moveLiveImg(event) {
 		
-		let bgItems = document.querySelectorAll('#live-bg .live-bg__item');
-		let coordX = event.clientX;
-		let coordY = event.clientY; 
+		let bgItems = document.querySelectorAll('#live-bg .live-bg__item')
+		let coordX = event.clientX
+		let coordY = event.clientY 
 
 		bgItems.forEach( function(item) {
 			
-			let itemSpeed = item.getAttribute('data-speed');
-			let translateValueX = (coordX*itemSpeed)/50;
-			let translateValueY = (coordY*itemSpeed)/50;
+			let itemSpeed = item.getAttribute('data-speed')
+			let translateValueX = (coordX*itemSpeed)/50
+			let translateValueY = (coordY*itemSpeed)/50
 
-			item.style.transform = 'translate('+translateValueX+'px, '+translateValueY+'px)';
+			item.style.transform = 'translate('+translateValueX+'px, '+translateValueY+'px)'
 
-		});
+		})
 		
 	}
 
-	document.addEventListener('mousemove', moveLiveImg);
+	document.addEventListener('mousemove', moveLiveImg)
 
 	/**
 	 * modal window
@@ -55,4 +55,4 @@ document.addEventListener("DOMContentLoaded", function() {
 		}
 	})
 	
-});
+})

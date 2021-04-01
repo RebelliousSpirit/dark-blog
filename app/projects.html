@@ -3,78 +3,38 @@
 <!--#include virtual="/parts/dropdownmenu.html" -->	
 
 		<div class="container">
-			<div class="row justify-content-start">
-				<div id="content" class="content col-md-12">			
-					<div class="content-inner">
-						<h2>Мой творческие <br><span class="text-write">работы и блог</span></h2>
-						<p>Проверьте мое портфолио. Весь проект отличается чистотой и простотой современного стиля</p>
-					</div>
-					<!-- /.content-inner -->
-					<div class="content__masonry">
-						<ul class="row portfolio">
-							<li class="portfolio__item col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-								<a href="/single.html"><img src="img/dist/portfolio/thumb-second.png" srcset="img/dist/Blog.jpg" 
-							class="lazy example-img" 
-							alt="item-img"></a>
-								<div class="portfolio__item-links">
-									<h3><a href="/single.html">Title</a></h3>
-									<p>Lorem ipsum, dolor sit amet consectetur 
-										adipisicing elit. Vitae, quidem.</p>
-								</div>
-							</li>
-							<li class="portfolio__item col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-								<a href="/single.html"><img src="img/dist/portfolio/thumb-second.png" srcset="img/dist/Blog.jpg" 
-							class="lazy example-img" 
-							alt="item-img"></a>
-								<div class="portfolio__item-links">
-									<h3><a href="/single.html">Title</a></h3>
-									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, quidem.</p>
-								</div>
-							</li>
-							<li class="portfolio__item col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-								<a href="/single.html"><img src="img/dist/portfolio/thumb-second.png" srcset="img/dist/Blog.jpg" 
-							class="lazy example-img" 
-							alt="item-img"></a>
-								<div class="portfolio__item-links">
-									<h3><a href="/single.html">Title</a></h3>
-									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, quidem.</p>
-								</div>
-							</li>
-							<li class="portfolio__item col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-								<a href="/single.html"><img src="img/dist/portfolio/thumb-second.png" srcset="img/dist/Blog.jpg" 
-							class="lazy example-img" 
-							alt="item-img"></a>
-								<div class="portfolio__item-links">
-									<h3><a href="/single.html">Title</a></h3>
-									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, quidem.</p>
-								</div>
-							</li>
-							<li class="portfolio__item col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-								<a href="/single.html"><img src="img/dist/portfolio/thumb-second.png" srcset="img/dist/Blog.jpg" 
-							class="lazy example-img" 
-							alt="item-img"></a>
-								<div class="portfolio__item-links">
-									<h3><a href="/single.html">Title</a></h3>
-									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, quidem.</p>
-								</div>
-							</li>
-							<li class="portfolio__item col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-								<a href="/single.html"><img src="img/dist/portfolio/thumb-second.png" srcset="img/dist/Blog.jpg" 
-							class="lazy example-img" 
-							alt="item-img"></a>
-								<div class="portfolio__item-links">
-									<h3><a href="/single.html">Title</a></h3>
-									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, quidem.</p>
-								</div>
-							</li>	
-						</ul>
-						<!-- /.row portfolio -->	
-					</div>
-					<!-- /.content__masonry -->									
+			<!--#include virtual="/parts/breadcrumbs.html" -->
+			<div id="content" class="content projects">
+				<div class="content-inner">
+					<h2>Мой творческие <br><span class="text-write">работы и блог</span></h2>
+					<p>Проверьте мое портфолио. Весь проект отличается чистотой и простотой современного стиля</p>
 				</div>
-				<!-- /#content.content col-md-8 -->	
+				<!-- /.content-inner -->
+				<div class="content__masonry articles articles_latest">
+					<div class="row articles__list" id="data-container">
+						<div class="articles__list-item col-12 col-md-4 post">			<figure class="post__thumb">
+								<a href="/single.html">
+									<img src="img/dist/portfolio/thumb-second.png" srcset="img/dist/Blog.jpg" 
+									class="lazy example-img" 
+									alt="blog img">
+								</a>	
+							</figure>				
+							<div class="post__content">
+								<h3 class="post__title"><a href="/single.html">Title</a></h3>
+								<p class="post__excerpt">Lorem ipsum, dolor sit amet consectetur 
+									adipisicing elit. Vitae, quidem.</p>
+							</div>
+						</div>
+												
+					</div>
+					<div id="pagination-container"></div>					
+					<!-- /.row portfolio -->	
+				</div>
+				<!-- /.content__masonry -->		
+				<!-- /.content__masonry -->					
+				
 			</div>
-			<!-- /.row -->					
+			<!-- /#content.content col-md-8 -->
 		</div>
 		<!-- /.container -->
 

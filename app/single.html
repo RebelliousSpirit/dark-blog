@@ -2,66 +2,64 @@
 <!--#include virtual="/parts/header.html" -->
 <!--#include virtual="/parts/dropdownmenu.html" -->
 
-		<div class="container">
-			<div class="row">
-				<div id="content" class="content post col-md-8">	
-					<div class="content-inner">
-						<h2>Блог на тему<br><span class="text-write">того то того то</span></h2>
-						<p>Проверьте мою статью. Вся статья отличается чистотой и простотой современного стиля</p>
-					</div>
-					<!-- /.content-inner -->				
-					<div class="post__content clear">
-						<h3 class="post__title">Title</h3>
-						<figure class="post__thumb">
-							<img src="img/dist/portfolio/thumb-second.png" srcset="img/dist/Blog.jpg" 
-							class="lazy example-img" 
-							alt="item-img">
-						</figure>
-						<!-- /.post__thumb -->
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis natus ipsa iste maxime esse placeat, earum ullam, modi animi odit, quas labore quisquam consectetur numquam in fuga eligendi. Eum necessitatibus est tempora dolorem earum delectus eaque ullam similique omnis voluptatum quis, alias, mollitia repellat a!</p>
-						<figure class="post__thumb float-left">
-							<img src="img/dist/portfolio/thumb-second.png" srcset="img/dist/Blog.jpg" 
-							class="lazy example-img" 
-							alt="item-img">
-						</figure>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-							Reiciendis, adipisci! Laudantium corporis, in cupiditate 
-							rerum ea, voluptatum rem corrupti officiis nam perspiciatis 
-							neque soluta ad.</p>
-					</div>
-					<!-- /.post__content -->
-
-					<div class="post__comments-box">
-						<form action="#" method="post" class="post__form">
-							<div class="row">
-								<div class="col-md-6"><input type="text"></div>
-								<div class="col-md-6"><input type="text"></div>		
-								<div class="col-md-12">
-									<label for="message">Напишите Ваш комментарий</label>
-									<textarea name="message" rows="15" cols="12" id="message"></textarea></div>
-								<div class="col-md-2"><button class="post__form-submit">Отправить</button></div>
-							</div>
-						</form>
-						<div class="post__comments">
-							<h3>Комментарии</h3>
-							<ul class="comments">
-								<li class="comment">
-									<figure class="comment__avatar"><img src="img/dist/user-primary.png" class="example-img" alt="user avatar"></figure>
-									<p class="comment__text">Minus delectus quo sunt similique ut ipsa quod facilis dignissimos. Corrupti provident tempora eaque sint.</p>
-								</li>
-								<li class="comment">	
-									<figure class="comment__avatar"><img src="img/dist/user-primary.png" class="example-img" alt="user avatar"></figure>
-									<p class="comment__text">Culpa provident facere doloremque obcaecati consequuntur consequatur voluptatum necessitatibus nihil. Distinctio repellendus modi eos quo!</p class="comment__text">
-								</li>
-							</ul>
-						</div>
-					</div>
-					<!-- /.post__comments -->
-				</div>
-				<!-- /#content.content col-md-12 -->	
+<div class="container">
+	<div class="row">
+		<div id="content" class="content post col-md-8">	
+			<div class="content-inner">
+				<h2>Блог на тему<br><span class="text-write">того то того то</span></h2>
+				<p>Проверьте мою статью. Вся статья отличается чистотой и простотой современного стиля</p>
 			</div>
-			<!-- /.row -->					
+			<!-- /.content-inner -->				
+			<div class="post__content clear">
+				<h3 class="post__title">Title</h3>
+				<figure class="post__thumb">
+					<img src="img/dist/portfolio/thumb-second.png" srcset="img/dist/Blog.jpg"
+					class="lazy example-img" 
+					alt="item-img">
+				</figure>
+				<!-- /.post__thumb -->
+				<p>Lorem ipsum dolor sit amet, consectetur <a href="#">sdbfdb</a>adipisicing elit. Quis natus ipsa iste maxime esse placeat, earum ullam, modi animi odit, quas labore quisquam consectetur numquam in fuga eligendi. Eum necessitatibus est tempora dolorem earum delectus eaque ullam similique omnis voluptatum quis, alias, mollitia repellat a!</p>
+				<figure class="post__thumb float-left">
+					<img src="img/dist/portfolio/thumb-second.png" srcset="img/dist/Blog.jpg" 
+					class="lazy example-img" 
+					alt="item-img">
+				</figure>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+					Reiciendis, adipisci! Laudantium corporis, in cupiditate 
+					rerum ea, voluptatum rem corrupti officiis nam perspiciatis 
+					neque soluta ad.</p>
+			</div>
+			<!-- /.post__content -->
+
+			<div class="post__comments-box">
+				<form action="#" method="post" class="post__form">
+					<div class="row">
+						<div class="col-md-6">
+						<label for="name">Напишите Ваше имя, фамилию и отчество</label>
+							<input type="text" id="name" placeholder="Ф.И.О"></div>
+						<div class="col-md-6">
+							<label for="email">Напишите Ваш email</label><input type="email" id="email" placeholder="email">
+						</div>		
+						<div class="col-md-12">
+							<label for="message">Напишите Ваш комментарий</label>
+							<textarea name="message" rows="15" cols="12" id="message"></textarea></div>
+						<div class="col-md-2"><button class="post__form-submit">Отправить</button></div>
+					</div>
+				</form>
+
+				<div class="post__comments comments-block">
+					<h2 class="comments-block__title">Комментарии</h2>
+					<div class="comments-block__comments">
+						<!--#include virtual="/parts/comment.html" -->
+					</div>
+				</div>
+			</div>
+			<!-- /.post__comments -->
 		</div>
-		<!-- /.container -->
+		<!-- /#content.content col-md-12 -->	
+	</div>
+	<!-- /.row -->					
+</div>
+<!-- /.container -->
 
 <!--#include virtual="/parts/footer.html" -->

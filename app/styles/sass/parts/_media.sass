@@ -2,10 +2,61 @@
 	.header	
 		padding: 10px 0 
 	.content-inner h2
-		font-size: 25px	
+		font-size: 25px
+
+	.post__comments
+		padding:
+			left: 5px
+			right: 5px
+
+	.comment
+		padding: 10px
+
+	.comment__avatar
+		float: none
+
+	.comment-form-reply
+		padding: 0 5px
+		margin: 15px 0
+		.comment-form-reply__input-textarea
+			width: 80%
+		
+
+	.comments-deep 
+		.comment
+			width: 100%
+			.form__submit
+				padding:
+					left: 10px
+					right: 10px
+
+	.comments-deep__wrap
+		padding: 10px
+	
+	.reply__field,
+	.placeholder__text
+		padding:
+			right: 55px
+			left: 10px	
+
+	.placeholder__text
+		font-size: 12px
+
+	.live-bg
+		display: none
+		
+
 @media (min-width: 576px) and (max-width: 768px)
 	.header	
-		padding: 15px 0 	 
+		padding: 15px 0
+
+	.comments-deep 
+		.comment
+			width: 100%
+			.form__submit
+				padding:
+					left: 10px
+					right: 10px	 
 // @media (min-width: 768px) and (max-width: 992px) 
 // @media (min-width: 992px) and (max-width: 1140px) 
 // @media (min-width: 1140px) 

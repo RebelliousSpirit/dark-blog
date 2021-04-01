@@ -19,6 +19,17 @@
 		width: 60%
 		color: $color-text-medium
 
+.text-write
+	min-height: 150px
+
+.articles_latest
+	.show-more-btn
+		margin: 0 auto
+		margin-top: 45px
+.show-more-btn
+	background-color: #706F80
+	color: #fff
+
 /* contact page styles */
 .contact__form
 	label
@@ -35,7 +46,8 @@
 	border: none
 	padding: 10px
 		right: 35px
-	background-color: $input-bg	
+	background-color: $input-bg
+	text-align: center	
 	&:hover
 		background-color: #706F80
 
@@ -47,19 +59,23 @@
 .post__thumb
 	padding: 5px
 
-.post
-	.post__form
-		padding: 
-			top: 45px
-			bottom: 25px
-		label
-			display: block
-		textarea, input
-			height: 45px
-			background-color: $bg-body
-			width: 100%
-			border: 
-				bottom: 1px solid $border-color-input
+.post__title
+	margin: 10px 0
+	a
+		color: $color-text
+
+.post__form
+	padding: 
+		top: 45px
+		bottom: 25px
+	label
+		display: block
+	textarea, input
+		height: 45px
+		background-color: $bg-body
+		width: 100%
+		border: 
+			bottom: 1px solid $border-color-input
 
 .post__form-submit
 	font-weight: 700
@@ -70,28 +86,15 @@
 	margin-top: 37px
 	padding: 14px 24px
 	transition: 0.3s
-	&:hover
+	color: $color-text
+	border-radius: 0
+	&:hover, 
+	&:focus
 		background-color: #E0DEFF
 		border-color: transparent
 
+
 .post__comments
-	background-color: #E0DEFF
 	padding: 35px 25px
-
-.comment
-	background-color: #fff	
-	padding: 15px
-	margin-bottom: 15px
-	.comment__text
-		padding: 15px 5px
-	&::after
-		content: ""
-		display: block
-		clear: both
-
-.comment__avatar
-	width: 35%
-	float: left
-	margin-right: 15px
 
 /* about page styles*/

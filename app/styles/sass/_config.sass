@@ -4,22 +4,37 @@ $font-family: 'Raleway', sans-serif
 
 // bacground
 $bg-body: #ffffff
-$footer-bg: #706F80
+
+$footer-bg: rgba(0,0,0,0.7)
+
+$comments-block-bg: #E0DEFF
+
 $input-bg: #E0DEFF
 $input-bg-focus: #fff
+
 $bg-error: #FFAEBC
 $bg-success: #B4F8C8
 $bg-warning: #FBE7C6
 $bg-default: #A0E7E5
 
-// colors
+$btn-bg-primary: #383740
+
+// colors 
 $color-page-header: #000
+
+$color-text-highlighted: #A8A6BF
 $color-text: #383740
 $color-text-hover: #706F80
+$color-text-error: #FFAEBC
+$color-text-success:  #B4F8C8
 $color-text-medium: #A8A6BF
 $color-text-light: #E0DEFF
+
 $color-links: #383740
 $color-links-hover: #706F80
+
+$color-btn: #fff
+
 
 //links
 // $link-active: 
@@ -29,9 +44,12 @@ $border-color-input: #706F80
 
 //z-index
 $z-index-min: 10
-$z-index-mid: 100
-$z-index-max: 1000
+$z-index-mid: 20
+$z-index-max: 30
 
+//pagination
+$bg-pagination-item: #fff
+$bg-pagination-item-hover: #706F80
 // // Breakpoints mixin settings (node_modules/bootstrap/scss/mixins/_breakpoints.scss)
 // // Example: +media-breakpoint-down(xs) - ≥576px / +media-breakpoint-up(sm) - // ≤576px
 // // Default variables: node_modules/bootstrap/scss/_variables.scss
@@ -116,27 +134,33 @@ body
 	font-family: $font-family
 	overflow-x: hidden
 	color: $color-text
-	background-color: $bg-body
+	background-color: $bg-body	
+	a, button
+		transition: 0.3s ease
+	a
+		color: $color-links
+		&:hover
+			text-decoration: none
+			color: $color-links-hover
+		&:active
+			color: #706F80
 
-button
-	padding: 5px 15px
-	border-color: transparent
-	border-radius: 5px
-	background-color: $bg-default
-	color: #fff
-	&:focus
-		outline: none
-		opacity: 0.7
-	&:hover
-		opacity: 0.7
+		&:visited
+			color: #A8A6BF 	
+	button
+		padding: 5px 15px
+		border: 1px solid transparent
+		border-radius: 5px
+		color: #fff
+		background-color: $btn-bg-primary
+		&:focus
+			outline: none
+			opacity: 0.7
+		&:hover
+			opacity: 0.7
 
-a, button
-	transition: 0.3s ease
-
-a:active
-	color: #706F80
-a:visited
-	color: #A8A6BF 	 
+	
+	 
 
 figure
 	padding: 3px
@@ -189,9 +213,20 @@ figure
 .clear:after
 	content: ''
 	display: block
-	clear: both 
+	clear: both
+
+.clear-top:before
+	content: ''
+	display: block
+	clear: both
 
 .float-left
 	width: 35%
 	margin-right: 15px
 
+.text-error
+	color: $color-text-error
+
+.text-success
+	color: $color-text-success
+	

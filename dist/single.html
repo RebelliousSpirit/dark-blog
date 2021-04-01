@@ -15,7 +15,8 @@
 	
 	<link rel="stylesheet" href="css/styles.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-
+	
+	<script src="js/quick-replies.min.js"></script>
 </head>
 
 <body>
@@ -37,7 +38,7 @@
 					<div class="header__logo col-4 col-md-2">
 						<a href="#"><img src="img/dist/logo.png" class="example-img" alt="logo"></a>
 					</div>
-					<button class="menu-swith">
+					<button class="menu-switch">
 						<i class="fa fa-bars" aria-hidden="true"></i>
 					</button>
 				</div>
@@ -46,7 +47,7 @@
 		</header>
 		<!-- /.header#header -->
 <div class="opacity-menu" id="opacity-menu">
-	<button class="menu-swith">
+	<button class="menu-switch">
 		<i class="fa fa-times" aria-hidden="true"></i>
 	</button>
 	<div class="opacity-menu__nav-list">
@@ -65,67 +66,195 @@
 </div>
 <!-- /.opacity-menu -->
 
-		<div class="container">
-			<div class="row">
-				<div id="content" class="content post col-md-8">	
-					<div class="content-inner">
-						<h2>Блог на тему<br><span class="text-write">того то того то</span></h2>
-						<p>Проверьте мою статью. Вся статья отличается чистотой и простотой современного стиля</p>
-					</div>
-					<!-- /.content-inner -->				
-					<div class="post__content clear">
-						<h3 class="post__title">Title</h3>
-						<figure class="post__thumb">
-							<img src="img/dist/portfolio/thumb-second.png" srcset="img/dist/Blog.jpg" 
-							class="lazy example-img" 
-							alt="item-img">
-						</figure>
-						<!-- /.post__thumb -->
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis natus ipsa iste maxime esse placeat, earum ullam, modi animi odit, quas labore quisquam consectetur numquam in fuga eligendi. Eum necessitatibus est tempora dolorem earum delectus eaque ullam similique omnis voluptatum quis, alias, mollitia repellat a!</p>
-						<figure class="post__thumb float-left">
-							<img src="img/dist/portfolio/thumb-second.png" srcset="img/dist/Blog.jpg" 
-							class="lazy example-img" 
-							alt="item-img">
-						</figure>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-							Reiciendis, adipisci! Laudantium corporis, in cupiditate 
-							rerum ea, voluptatum rem corrupti officiis nam perspiciatis 
-							neque soluta ad.</p>
-					</div>
-					<!-- /.post__content -->
-
-					<div class="post__comments-box">
-						<form action="#" method="post" class="post__form">
-							<div class="row">
-								<div class="col-md-6"><input type="text"></div>
-								<div class="col-md-6"><input type="text"></div>		
-								<div class="col-md-12">
-									<label for="message">Напишите Ваш комментарий</label>
-									<textarea name="message" rows="15" cols="12" id="message"></textarea></div>
-								<div class="col-md-2"><button class="post__form-submit">Отправить</button></div>
-							</div>
-						</form>
-						<div class="post__comments">
-							<h3>Комментарии</h3>
-							<ul class="comments">
-								<li class="comment">
-									<figure class="comment__avatar"><img src="img/dist/user-primary.png" class="example-img" alt="user avatar"></figure>
-									<p class="comment__text">Minus delectus quo sunt similique ut ipsa quod facilis dignissimos. Corrupti provident tempora eaque sint.</p>
-								</li>
-								<li class="comment">	
-									<figure class="comment__avatar"><img src="img/dist/user-primary.png" class="example-img" alt="user avatar"></figure>
-									<p class="comment__text">Culpa provident facere doloremque obcaecati consequuntur consequatur voluptatum necessitatibus nihil. Distinctio repellendus modi eos quo!</p class="comment__text">
-								</li>
-							</ul>
-						</div>
-					</div>
-					<!-- /.post__comments -->
-				</div>
-				<!-- /#content.content col-md-12 -->	
+<div class="container">
+	<div class="row">
+		<div id="content" class="content post col-md-8">	
+			<div class="content-inner">
+				<h2>Блог на тему<br><span class="text-write">того то того то</span></h2>
+				<p>Проверьте мою статью. Вся статья отличается чистотой и простотой современного стиля</p>
 			</div>
-			<!-- /.row -->					
+			<!-- /.content-inner -->				
+			<div class="post__content clear">
+				<h3 class="post__title">Title</h3>
+				<figure class="post__thumb">
+					<img src="img/dist/portfolio/thumb-second.png" srcset="img/dist/Blog.jpg"
+					class="lazy example-img" 
+					alt="item-img">
+				</figure>
+				<!-- /.post__thumb -->
+				<p>Lorem ipsum dolor sit amet, consectetur <a href="#">sdbfdb</a>adipisicing elit. Quis natus ipsa iste maxime esse placeat, earum ullam, modi animi odit, quas labore quisquam consectetur numquam in fuga eligendi. Eum necessitatibus est tempora dolorem earum delectus eaque ullam similique omnis voluptatum quis, alias, mollitia repellat a!</p>
+				<figure class="post__thumb float-left">
+					<img src="img/dist/portfolio/thumb-second.png" srcset="img/dist/Blog.jpg" 
+					class="lazy example-img" 
+					alt="item-img">
+				</figure>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+					Reiciendis, adipisci! Laudantium corporis, in cupiditate 
+					rerum ea, voluptatum rem corrupti officiis nam perspiciatis 
+					neque soluta ad.</p>
+			</div>
+			<!-- /.post__content -->
+
+			<div class="post__comments-box">
+				<form action="#" method="post" class="post__form">
+					<div class="row">
+						<div class="col-md-6">
+						<label for="name">Напишите Ваше имя, фамилию и отчество</label>
+							<input type="text" id="name" placeholder="Ф.И.О"></div>
+						<div class="col-md-6">
+							<label for="email">Напишите Ваш email</label><input type="email" id="email" placeholder="email">
+						</div>		
+						<div class="col-md-12">
+							<label for="message">Напишите Ваш комментарий</label>
+							<textarea name="message" rows="15" cols="12" id="message"></textarea></div>
+						<div class="col-md-2"><button class="post__form-submit">Отправить</button></div>
+					</div>
+				</form>
+
+				<div class="post__comments comments-block">
+					<h2 class="comments-block__title">Комментарии</h2>
+					<div class="comments-block__comments">
+						<div class="comment clear" id="id-comment-123" data-post-id="123">
+	<figure class="comment__avatar clear">
+		<img src="img/dist/user-primary.png" class="example-img" alt="user avatar">
+	</figure>
+	<div class="comment__author">
+		<a href="#" class="comment__author-link">Author Name</a>
+	</div>
+	<div class="comment__text">
+		<p>Minus delectus quo sunt similique ut ipsa quod facilis dignissimos. Corrupti provident tempora eaque sint.</p>
+	</div>
+	<div class="comment__footer clear">
+		<div class="comment__date">
+			Дата:
+			12.03.2021
 		</div>
-		<!-- /.container -->
+		<div class="comment__reply">
+			<a href="#" class="comment__reply-link">ответить</a>
+		</div>
+		<div class="comment__modify">
+			<a href="#" onclick="#">изменить</a>
+		</div>		
+		<div class="comment__rate">
+			<span class="comment__rate-like">
+				<a href="#" onclick="#">
+					<i class="fa fa-thumbs-up" aria-hidden="true"></i>
+				</a>
+			</span>
+			<span class="comment__rate-dislike">
+				<a href="#" onclick="#">
+					<i class="fa fa-thumbs-down" aria-hidden="true"></i>
+				</a>
+			</span>
+		</div>			
+	</div>	
+</div>
+<div class="comments-deep" id="id-comment-deep-123" data-comment-id="123">
+	<div class="clear comments-deep__wrap">
+		<div class="comments-deep__list clear">
+			<div class="comment clear" id="">
+				<figure class="comment__avatar"><img src="img/dist/user-primary.png" class="example-img" alt="user avatar"></figure>
+				<div class="comment__author">
+					<a href="#" class="comment__author-link">Author Name</a>
+				</div>
+				<div class="comment__text">
+					<p>
+					<span class="comment__greeting">Алескей</span>
+					Minus delectus quo sunt similique ut ipsa quod facilis dignissimos. Corrupti provident tempora eaque sint.
+					</p>				
+				</div>
+				<div class="comment__footer clear">
+					<div class="comment__date">
+						Дата:
+						12.03.2021
+					</div>
+					<div class="comment__reply">
+						<a href="#123" class="">ответить</a>
+					</div>
+					<div class="comment__rate">
+						<span class="comment__rate-like">
+							<a href="#">
+								<i class="fa fa-thumbs-up" aria-hidden="true"></i>
+							</a>
+						</span>
+						<span class="comment__rate-dislike">
+							<a href="#">
+								<i class="fa fa-thumbs-down" aria-hidden="true"></i>
+							</a>
+						</span>
+					</div>			
+				</div>
+			</div>
+			<div class="comment clear" id="">
+				<figure class="comment__avatar"><img src="img/dist/user-primary.png" class="example-img" alt="user avatar"></figure>
+				<div class="comment__author">
+					<a href="#" class="comment__author-link">Author Name</a>
+				</div>
+				<div class="comment__text">
+					<p>
+					<span class="comment__greeting">Алескей</span>
+					Minus delectus quo sunt similique ut ipsa quod facilis dignissimos. Corrupti provident tempora eaque sint.
+					</p>				
+				</div>
+				<div class="comment__footer clear">
+					<div class="comment__date">
+						Дата:
+						12.03.2021
+					</div>
+					<div class="comment__reply">
+						<a href="#123" class="">ответить</a>
+					</div>
+					<div class="comment__rate">
+						<span class="comment__rate-like">
+							<a href="#">
+								<i class="fa fa-thumbs-up" aria-hidden="true"></i>
+							</a>
+						</span>
+						<span class="comment__rate-dislike">
+							<a href="#">
+								<i class="fa fa-thumbs-down" aria-hidden="true"></i>
+							</a>
+						</span>
+					</div>			
+				</div>
+			</div>
+		</div>				
+		<div class="comment-reply-form">
+			<div class="reply">
+				<div class="reply__wrap reply-form" data-type="form">
+					<div class="reply__field-wrap input-text" data-type="input">
+						<div class="reply__field" id="#" contenteditable="true" role="form-field" data-type="text-feild" data-name="text">
+						</div>
+						<div class="placeholder" data-type="placeholder">
+							<div class="placeholder__content">
+								<div class="placeholder__text">напишите свое сообщение</div>
+							</div>
+						</div>			
+					</div>				
+					<div class="reply__inner-button-panel">
+						<button class="reply__photo">
+							<i class="fa fa-file-image-o" aria-hidden="true"></i>
+						</button>	
+					</div>	
+					<button class="reply__submit" data-type="submit">
+						<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+					</button>
+				</div>	
+			</div>
+		</div>
+	</div>
+</div>
+
+					</div>
+				</div>
+			</div>
+			<!-- /.post__comments -->
+		</div>
+		<!-- /#content.content col-md-12 -->	
+	</div>
+	<!-- /.row -->					
+</div>
+<!-- /.container -->
 
 		<div class="modal-window success" data-modal="true">
 	<div class="modal-window__content">

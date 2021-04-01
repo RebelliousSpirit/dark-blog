@@ -15,7 +15,8 @@
 	
 	<link rel="stylesheet" href="css/styles.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-
+	
+	<script src="js/quick-replies.min.js"></script>
 </head>
 
 <body>
@@ -37,7 +38,7 @@
 					<div class="header__logo col-4 col-md-2">
 						<a href="#"><img src="img/dist/logo.png" class="example-img" alt="logo"></a>
 					</div>
-					<button class="menu-swith">
+					<button class="menu-switch">
 						<i class="fa fa-bars" aria-hidden="true"></i>
 					</button>
 				</div>
@@ -46,7 +47,7 @@
 		</header>
 		<!-- /.header#header -->
 <div class="opacity-menu" id="opacity-menu">
-	<button class="menu-swith">
+	<button class="menu-switch">
 		<i class="fa fa-times" aria-hidden="true"></i>
 	</button>
 	<div class="opacity-menu__nav-list">
@@ -66,74 +67,105 @@
 <!-- /.opacity-menu -->	
 
 		<div class="container">
+			<div class="breadcrumbs-wrap">
+	<div class="breadcrumbs">
+		<ul class="breadcrumbs__items-wrap">
+			<li class="braadcrumbs__item">
+				<span class="breadcrumbs__item-icon">
+					<i class="fa fa-home" aria-hidden="true"></i>
+				</span>	
+				<span class="breadcrumbs__item-link">
+					<a href="#">home</a>
+				</span>	
+			</li>
+			<li class="braadcrumbs__item">
+				<span class="breadcrumbs__item-icon">
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+				</span>		
+				<span class="breadcrumbs__item-link">
+					<a href="#">page</a>
+				</span>
+			</li>
+		</ul>
+	</div>
+</div>
+
 			<div class="row justify-content-start">
-				<div id="content" class="content col-md-12">			
+				<div id="content" class="content projects col-md-12">			
 					<div class="content-inner">
 						<h2>Мой творческие <br><span class="text-write">работы и блог</span></h2>
 						<p>Проверьте мое портфолио. Весь проект отличается чистотой и простотой современного стиля</p>
 					</div>
 					<!-- /.content-inner -->
 					<div class="content__masonry">
-						<ul class="row portfolio">
+						<ul class="row portfolio" id
+						="portfolio">
 							<li class="portfolio__item col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-								<a href="/single.html"><img src="img/dist/portfolio/thumb-second.png" srcset="img/dist/Blog.jpg" 
+								<figure class="post__thumb">
+									<a href="/single.html"><img src="img/dist/portfolio/thumb-second.png" srcset="img/dist/Blog.jpg" 
 							class="lazy example-img" 
 							alt="item-img"></a>
-								<div class="portfolio__item-links">
+								</figure>					<div class="portfolio__item-links">
 									<h3><a href="/single.html">Title</a></h3>
 									<p>Lorem ipsum, dolor sit amet consectetur 
 										adipisicing elit. Vitae, quidem.</p>
 								</div>
 							</li>
 							<li class="portfolio__item col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-								<a href="/single.html"><img src="img/dist/portfolio/thumb-second.png" srcset="img/dist/Blog.jpg" 
+								<figure class="post__thumb">
+									<a href="/single.html"><img src="img/dist/portfolio/thumb-second.png" srcset="img/dist/Blog.jpg" 
 							class="lazy example-img" 
 							alt="item-img"></a>
-								<div class="portfolio__item-links">
+								</figure>					<div class="portfolio__item-links">
 									<h3><a href="/single.html">Title</a></h3>
-									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, quidem.</p>
+									<p>Lorem ipsum, dolor sit amet consectetur 
+										adipisicing elit. Vitae, quidem.</p>
+								</div>
+							</li><li class="portfolio__item col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+								<figure class="post__thumb">
+									<a href="/single.html"><img src="img/dist/portfolio/thumb-second.png" srcset="img/dist/Blog.jpg" 
+							class="lazy example-img" 
+							alt="item-img"></a>
+								</figure>					<div class="portfolio__item-links">
+									<h3><a href="/single.html">Title</a></h3>
+									<p>Lorem ipsum, dolor sit amet consectetur 
+										adipisicing elit. Vitae, quidem.</p>
+								</div>
+							</li><li class="portfolio__item col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+								<figure class="post__thumb">
+									<a href="/single.html"><img src="img/dist/portfolio/thumb-second.png" srcset="img/dist/Blog.jpg" 
+							class="lazy example-img" 
+							alt="item-img"></a>
+								</figure>					<div class="portfolio__item-links">
+									<h3><a href="/single.html">Title</a></h3>
+									<p>Lorem ipsum, dolor sit amet consectetur 
+										adipisicing elit. Vitae, quidem.</p>
+								</div>
+							</li><li class="portfolio__item col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+								<figure class="post__thumb">
+									<a href="/single.html"><img src="img/dist/portfolio/thumb-second.png" srcset="img/dist/Blog.jpg" 
+							class="lazy example-img" 
+							alt="item-img"></a>
+								</figure>					<div class="portfolio__item-links">
+									<h3><a href="/single.html">Title</a></h3>
+									<p>Lorem ipsum, dolor sit amet consectetur 
+										adipisicing elit. Vitae, quidem.</p>
 								</div>
 							</li>
-							<li class="portfolio__item col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-								<a href="/single.html"><img src="img/dist/portfolio/thumb-second.png" srcset="img/dist/Blog.jpg" 
-							class="lazy example-img" 
-							alt="item-img"></a>
-								<div class="portfolio__item-links">
-									<h3><a href="/single.html">Title</a></h3>
-									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, quidem.</p>
-								</div>
-							</li>
-							<li class="portfolio__item col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-								<a href="/single.html"><img src="img/dist/portfolio/thumb-second.png" srcset="img/dist/Blog.jpg" 
-							class="lazy example-img" 
-							alt="item-img"></a>
-								<div class="portfolio__item-links">
-									<h3><a href="/single.html">Title</a></h3>
-									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, quidem.</p>
-								</div>
-							</li>
-							<li class="portfolio__item col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-								<a href="/single.html"><img src="img/dist/portfolio/thumb-second.png" srcset="img/dist/Blog.jpg" 
-							class="lazy example-img" 
-							alt="item-img"></a>
-								<div class="portfolio__item-links">
-									<h3><a href="/single.html">Title</a></h3>
-									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, quidem.</p>
-								</div>
-							</li>
-							<li class="portfolio__item col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-								<a href="/single.html"><img src="img/dist/portfolio/thumb-second.png" srcset="img/dist/Blog.jpg" 
-							class="lazy example-img" 
-							alt="item-img"></a>
-								<div class="portfolio__item-links">
-									<h3><a href="/single.html">Title</a></h3>
-									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, quidem.</p>
-								</div>
-							</li>	
 						</ul>
 						<!-- /.row portfolio -->	
 					</div>
-					<!-- /.content__masonry -->									
+					<!-- /.content__masonry -->					
+					<div class="pagination">
+	<ul class="pagination__items-wrap">
+		<li class="pagination__item"><a href="#" data-step="1"><i class="fa fa-arrow-left" aria-hidden="true"></i></a></li>
+		<li class="pagination__item"><a href="#" data-step="1">1</a></li>
+		<li class="pagination__item"><a href="#" data-step="1">2</a></li>
+		<li class="pagination__item"><a href="#" data-step="1">3</a></li>
+		<li class="pagination__item"><a href="#" data-step="1">4</a></li>
+		<li class="pagination__item"><a href="#" data-step="1"><i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+	</ul>
+</div>
 				</div>
 				<!-- /#content.content col-md-8 -->	
 			</div>

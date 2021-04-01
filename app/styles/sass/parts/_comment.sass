@@ -1,0 +1,133 @@
+.comments-block__comments
+	background-color: $comments-block-bg
+	padding: 10px
+
+.comments-block__title
+	text-align: center
+	color: $color-text-highlighted
+	margin-bottom: 25px
+
+.comment
+	padding: 15px
+	margin-bottom: 15px
+	.comment__text
+		padding: 15px 5px
+		overflow: hidden
+	&::after
+		content: ""
+		display: block
+		clear: both
+
+.comment__avatar
+	max-width: 75px
+	float: left
+	margin-right: 15px
+
+.comment__footer
+	padding: 0 5px
+	position: relative
+
+.comment__date, .comment__modify, .comment__reply, .comment__rate
+	margin-left: 5px
+
+.comment__date
+	float: left
+
+.comment__modify,
+.comment__reply
+	float: right
+	display: block
+	a
+		color: $color-links
+		transition: 0.3s
+		&:hover
+			color: $color-links-hover
+
+.comment__rate
+	position: absolute
+	top: -95px
+	right: -5px
+	background-color: transparent
+	display: none
+	transition: 0.3s ease 
+
+.comment__greeting
+	color: $color-text-highlighted
+
+.comments-deep__wrap
+	padding: 10px 25px
+
+.comments-deep__list
+	.comment
+		width: 70%
+		&:nth-child(odd)
+			float: left
+		&:nth-child(even)
+			float: right
+	.comment__rate
+		right: -25px
+
+.reply__wrap
+	position: relative
+	padding:
+		left: 5px
+		right: 55px
+	margin: 10px 0
+
+.reply__field-wrap
+	position: relative	
+
+.reply__field
+	border-radius: 5px
+	min-height: 34px
+	border: 1px solid #fff
+	background-color: transparent
+	&:hover
+		cursor: text
+	&:focus
+		outline: none
+		background-color: #fff
+
+.reply__field_focus
+	padding: 10px 110px 10px 5px
+
+.reply__inner-button-panel
+	position: absolute
+	right: 65px
+	top: 5px
+	z-index: $z-index-min
+
+.reply__submit,
+.reply__photo
+	color: #383740
+	background-color: #fff
+	border-color: #383740
+
+.reply__submit
+	position: absolute
+	right: 5px
+	top: 5px	
+
+.placeholder
+	position: relative
+	z-index: $z-index-min
+	transition: 0.3s
+
+.placeholder__text, .reply__field
+	padding: 10px 110px 10px 15px
+	transition: 0.3s
+	z-index: $z-index-min
+
+.placeholder_hidden
+	display: none
+
+.placeholder__content
+	width: 100%
+	position: absolute
+	bottom: 0
+	display: block
+	&:hover
+		cursor: text
+	&:focus
+		display: none
+

@@ -15,7 +15,8 @@
 	
 	<link rel="stylesheet" href="css/styles.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-
+	
+	<script src="js/quick-replies.min.js"></script>
 </head>
 
 <body>
@@ -37,7 +38,7 @@
 					<div class="header__logo col-4 col-md-2">
 						<a href="#"><img src="img/dist/logo.png" class="example-img" alt="logo"></a>
 					</div>
-					<button class="menu-swith">
+					<button class="menu-switch">
 						<i class="fa fa-bars" aria-hidden="true"></i>
 					</button>
 				</div>
@@ -46,7 +47,7 @@
 		</header>
 		<!-- /.header#header -->
 <div class="opacity-menu" id="opacity-menu">
-	<button class="menu-swith">
+	<button class="menu-switch">
 		<i class="fa fa-times" aria-hidden="true"></i>
 	</button>
 	<div class="opacity-menu__nav-list">
@@ -67,63 +68,72 @@
 
 		<div class="container">
 			<div class="row justify-content-start">
-				<div id="content" class="content col-md-7">			
+				<div id="content" class="content col-md-7">
 					<div class="content-inner">
-						<h2 class="text-write">Мой творческие <br>работы и блог</span></h2>
+						<h2 class="text-write">Мои творческие <br>работы и блог</span></h2>
 						<p>Проверьте мое портфолио. Весь проект отличается чистотой и простотой современного стиля</p>
 					</div>
 					<!-- /.content-inner -->
-					<div class="content__masonry">
-						<ul class="row portfolio">
-							<li class="portfolio__item col-md-6">
-								<a href="/single.html">
-									<img src="img/dist/portfolio/thumb-second.png" srcset="img/dist/Blog.jpg" 
-									class="lazy example-img" 
-									alt="blog img">
-								</a>					
-								<div class="portfolio__item-links">
-									<h3><a href="/single.html">Title</a></h3>
-									<p>Lorem ipsum, dolor sit amet consectetur 
+					<div class="content__masonry articles articles_latest">
+						<div class="row articles__list">
+							<div class="articles__list-item col-md-6 post">			<figure class="post__thumb">
+									<a href="/single.html">
+										<img src="img/dist/portfolio/thumb-second.png" srcset="img/dist/Blog.jpg" 
+										class="lazy example-img" 
+										alt="blog img">
+									</a>	
+								</figure>				
+								<div class="post__content">
+									<h3 class="post__title"><a href="/single.html">Title</a></h3>
+									<p class="post__excerpt">Lorem ipsum, dolor sit amet consectetur 
 										adipisicing elit. Vitae, quidem.</p>
 								</div>
-							</li>
-							<li class="portfolio__item col-md-6">
-								<a href="/single.html">
-									<img src="img/dist/portfolio/thumb-second.png" srcset="img/dist/Blog.jpg" 
-									class="lazy example-img" 
-									alt="blog img">
-								</a>					
-								<div class="portfolio__item-links">
-									<h3><a href="/single.html">Title</a></h3>
-									<p>Lorem ipsum, dolor sit amet consectetur 
+							</div>
+							<div class="articles__list-item col-md-6 post">					<figure class="post__thumb">
+									<a href="/single.html">
+										<img src="img/dist/portfolio/thumb-second.png" srcset="img/dist/Blog.jpg" 
+										class="lazy example-img" 
+										alt="blog img">
+									</a>	
+								</figure>					
+								<div class="post__content">
+									<h3 class="post__title"><a href="/single.html">Title</a></h3>
+									<p class="post__excerpt">Lorem ipsum, dolor sit amet consectetur 
 										adipisicing elit. Vitae, quidem.</p>
 								</div>
-							</li>
-							<li class="portfolio__item col-md-6">
-								<a href="/single.html">
-									<img src="img/dist/portfolio/thumb-second.png" srcset="img/dist/Blog.jpg" 
-									class="lazy example-img" 
-									alt="blog img">
-								</a>					
-								<div class="portfolio__item-links">
-									<h3><a href="/single.html">Title</a></h3>
-									<p>Lorem ipsum, dolor sit amet consectetur 
+							</div>
+							<div class="articles__list-item col-md-6 post">			<figure class="post__thumb">
+									<a href="/single.html">
+										<img src="img/dist/portfolio/thumb-second.png" srcset="img/dist/Blog.jpg" 
+										class="lazy example-img" 
+										alt="blog img">
+									</a>	
+								</figure>					
+								<div class="post__content">
+									<h3 class="post__title"><a href="/single.html">Title</a></h3>
+									<p class="post__excerpt">Lorem ipsum, dolor sit amet consectetur 
 										adipisicing elit. Vitae, quidem.</p>
 								</div>
-							</li>
-							<li class="portfolio__item col-md-6">
-								<a href="/single.html">
-									<img src="img/dist/portfolio/thumb-second.png" srcset="img/dist/Blog.jpg" 
-									class="lazy example-img" 
-									alt="blog img">
-								</a>					
-								<div class="portfolio__item-links">
-									<h3><a href="/single.html">Title</a></h3>
-									<p>Lorem ipsum, dolor sit amet consectetur 
+							</div>
+							<div class="articles__list-item col-md-6 post">			<figure class="post__thumb">
+									<a href="/single.html">
+										<img src="img/dist/portfolio/thumb-second.png" srcset="img/dist/Blog.jpg" 
+										class="lazy example-img" 
+										alt="blog img">
+									</a>	
+								</figure>				
+								<div class="post__content">
+									<h3 class="post__title"><a href="/single.html">Title</a></h3>
+									<p class="post__excerpt">Lorem ipsum, dolor sit amet consectetur 
 										adipisicing elit. Vitae, quidem.</p>
 								</div>
-							</li>
-						</ul>
+							</div>
+							<button class="show-more-btn">
+								<div class="show-more-btn__inner">
+									дальше
+								</div>
+							</button>
+						</div>
 						<!-- /.row portfolio -->	
 					</div>
 					<!-- /.content__masonry -->									

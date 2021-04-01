@@ -1,0 +1,25 @@
+{
+  "name": "dark-blog",
+  "homepage": "",
+  "authors": [
+    "inkarbekov begzat"
+  ],
+  "description": "",
+  "main": "",
+  "keywords": [
+    "blog"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "paginationjs": "^2.1.5",
+    "lazyload": "^3.2.2"
+  }
+}
