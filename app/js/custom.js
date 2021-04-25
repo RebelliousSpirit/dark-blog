@@ -54,5 +54,33 @@ document.addEventListener("DOMContentLoaded", function() {
 			$(this).parents('.modal-window').fadeOut(600)
 		}
 	})
-	
+
+	/**
+	* placeholder
+	*/
+	let reply = document.getElementsByClassName('reply__field-wrap')
+
+	for (let i = 0; i < reply.length; i++) {
+		let placeholder = reply[i].querySelector('.placeholder__text')
+		let replyField = reply[i].querySelector('.reply__field')
+		replyField.textContent = ''
+
+		placeholder.addEventListener('click', function(){
+			this.style.display = 'none'
+			replyField.focus();
+		})
+
+		replyField.addEventListener('blur', function(){
+			if(this.textContent === ''){
+				placeholder.style.display = 'block'
+			}
+		})
+
+		replyField.addEventListener('click', function(){
+			if(placeholder.style.display === 'none'){
+				this.focus()
+			}
+		})
+	}
+
 })

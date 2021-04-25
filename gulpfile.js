@@ -36,7 +36,11 @@ function browsersync() {
 }
 
 function getScripts() {
-	return src(['node_modules/lazyload/lazyload.min.js', 'node_modules/jquery/dist/jquery.min.js'])
+	return src([
+		'app/bower_components/jquery/dist/jquery.min.js',
+		'app/bower_components/lazyload/build/lazyload.min.js',
+		'app/bower_components/paginationjs/dist/pagination.min.js'
+		])
 	.pipe(dest('app/js'))
 }
 
